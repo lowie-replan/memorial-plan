@@ -1,22 +1,45 @@
-Memorial Plan System (Java Swing)
+Memorial Plan System using Java Swing (Course Project)
 ---
 
-A desktop application for calculating memorial lot prices, VAT, and installment plans.
+A desktop project application developed during my 2nd year in college for calculating memorial lot prices, VAT, and installment plans.
 
-**Features**
+---
 
-User Registration: GUI for capturing client names.
+**Project Structure**
 
-Calculation: Handles Selling Price, Interest, and Monthly Installments.
+The application is built using a modular multi-frame architecture:
 
-Navigation: Multi-frame flow (Frame 1 → 2 → 3).
+MainLauncher.java: The entry point that triggers the initial registration screen.
 
-**Structure**
+MP.java: The core logic class; handles all mathematical formulas and interest calculations.
 
-**Setup**
+Frame1.java: User login and registration interface.
 
-Requirement: JDK 8+
+Frame2.java: Lot category selection and initial cost breakdown (VAT, Selling Price, Balance).
 
-Compile: javac *.java
+Frame3.java: Payment terms selection (1–3 Years or Cash) and final contract price generation.
 
-Run: java MainLauncher
+Close.java: Final transaction confirmation screen.
+
+---
+
+**Installation & Running**
+
+Clone the repository:
+
+Bash
+git clone https://github.com/your-username/memorial-plan-system.git
+
+
+Compile the source files:
+
+Bash
+
+javac *.java
+
+
+Run the application:
+
+Bash
+
+java MainLauncher
